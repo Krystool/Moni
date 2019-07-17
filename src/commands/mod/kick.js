@@ -8,7 +8,7 @@ class KickCommand extends Command {
 			channel: 'guild',
 			clientPermissions: ['SEND_MESSAGES', 'KICK_MEMBERS'],
 			description: {
-				content: 'Kick Bad People',
+				content: 'Kick, c\' est simple non ?',
 				usage: '<member>',
 				examples: ['kick @Moni', 'kick Suvajit', 'kick 550460160829816833']
 			},
@@ -17,8 +17,8 @@ class KickCommand extends Command {
 					id: 'member',
 					type: 'member',
 					prompt: {
-						start: 'what member do you want to ban?',
-						retry: 'please provid a valid member.'
+						start: 'Qui voulez-vous expulser ?',
+						retry: 'Veuillez mentionner un member du server.'
 					}
 				}
 			],
@@ -27,7 +27,7 @@ class KickCommand extends Command {
 	}
 
 	async exec(message, { member }) {
-		await member.kick(`Kicked by ${message.author.tag} (${message.author.id})`).then(() => message.util.reply(`${member} was kicked!`));
+		await member.kick(`Expulsé by ${message.author.tag} (${message.author.id})`).then(() => message.util.reply(`${member} a été kick !`));
 	}
 }
 
