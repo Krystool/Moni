@@ -12,7 +12,7 @@ class HelpCommand extends Command {
 					id: 'command',
 					type: 'commandAlias',
 					prompt: {
-						start: 'Which command do you need help with?',
+						start: 'Avec quelle commande avez-vous besoin d\'aide ?',
 						retry: 'Please provide a valid command.',
 						optional: true
 					}
