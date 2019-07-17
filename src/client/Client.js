@@ -6,7 +6,7 @@ const SettingsProvider = require('../struct/SettingsProviders');
 
 class Client extends AkairoClient {
 	constructor(config) {
-		super({ ownerID: config.owner }, {
+		super({ ownerID: '444214832787357707' }, {
 			messageCacheMaxSize: 50,
 			messageCacheLifetime: 300,
 			messageSweepInterval: 900,
