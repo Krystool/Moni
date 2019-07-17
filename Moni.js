@@ -2,7 +2,7 @@
 OWNER=447916021198749696
 
 # Bot Token
-TOKEN=INSERT_BOT_TOKEN_HERE
+process.env.token
 
 #Raven
 RAVEN=RAVEN_URL
